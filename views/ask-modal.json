@@ -1,0 +1,46 @@
+{
+    "type": "modal",
+    "callback_id": "ask-modal",
+    "title": {
+        "type": "plain_text",
+        "text": "Ask a Question",
+        "emoji": true
+    },
+    "submit": {
+		"type": "plain_text",
+		"text": "Submit Question",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+    "blocks": [
+        {
+            "type": "input",
+            "element": {
+                "type": "plain_text_input",
+                "action_id": "question-title"
+            },
+            "label": {
+                "type": "plain_text",
+                "text": "Question Title",
+                "emoji": true
+            }
+        },
+        {
+            "type": "input",
+            "element": {
+                "type": "plain_text_input",
+                "multiline": true,
+                "action_id": "question-body"
+            },
+            "label": {
+                "type": "plain_text",
+                "text": "Question Body",
+                "emoji": true
+            }
+        }
+    ]
+}
