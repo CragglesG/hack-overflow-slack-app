@@ -48,7 +48,7 @@ def ask_modal(ack, body, logger, client):
 				}
 			}
 		])
-		client.chat_postMessage(channel="C07SS5ED09K", thread_ts=message1["ts"], text=f"Question ID: {message1["ts"]}")
+		client.chat_postMessage(channel="C07SS5ED09K", thread_ts=message1["ts"], text=f"Question ID: {message1['ts']}")
 		questions.set(message1["ts"], add_question.json()["data"]["id"])
 
 @app.command("/answer-question")
