@@ -64,7 +64,7 @@ def answer_modal(ack, body, logger, client):
 	answer = body["view"]["state"]["values"][body["view"]["blocks"][1]["block_id"]]["question-body"]["value"]
 	profile = client.users_info(user=body["user"]["id"])["user"]["profile"]
 	username = profile["display_name"]
-	image = profile["image_512"]
+	image = profile["image_original"]
 	if api_keys.get(body["user"]["id"]) == False:
 		client.chat_postEphemeral(channel="C07SS5ED09K", user=body["user"]["id"], text="You need to generate your API key first. Run `/overflow-apikey` to generate it.")
 	elif questions.get(question_id) == False:
