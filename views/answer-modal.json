@@ -1,6 +1,6 @@
 {
     "type": "modal",
-    "callback_id": "ask-modal",
+    "callback_id": "answer-modal",
     "title": {
         "type": "plain_text",
         "text": "Answer a Question",
@@ -25,7 +25,7 @@
             },
             "label": {
                 "type": "plain_text",
-                "text": "Question ID (this can be found at the bottom of the question)",
+                "text": "Question ID (this can be found in the question thread)",
                 "emoji": true
             }
         },

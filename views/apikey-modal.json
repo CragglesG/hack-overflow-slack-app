@@ -1,0 +1,54 @@
+{
+	"type": "modal",
+	"callback_id": "apikey-modal",
+	"title": {
+		"type": "plain_text",
+		"text": "Generate an API Key",
+		"emoji": true
+	},
+	"submit": {
+		"type": "plain_text",
+		"text": "Generate",
+		"emoji": true
+	},
+	"close": {
+		"type": "plain_text",
+		"text": "Cancel",
+		"emoji": true
+	},
+	"blocks": [
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": "The Hack Overflow Slack app needs your Hack Overflow API key so it can post questions and answers on your behalf. Your email and password are required to retrieve your API key from the server. Once retrieved, your API key will be safely stored for future use. Your email and password WILL NOT be stored. If you have any concerns regarding the privacy of your data, feel free to DM @Craig for more information.\n\nIMPORTANT: If you signed up for Hack Overflow using Slack, your email will be the same as your Slack email and you will need to manually set your password in your Hack Overflow account settings.",
+				"emoji": true
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"action_id": "email"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Hack Overflow Email",
+				"emoji": false
+			}
+		},
+		{
+			"type": "input",
+			"element": {
+				"type": "plain_text_input",
+				"multiline": false,
+				"action_id": "password"
+			},
+			"label": {
+				"type": "plain_text",
+				"text": "Hack Overflow Password",
+				"emoji": false
+			}
+		}
+	]
+}
